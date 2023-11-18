@@ -1,0 +1,9 @@
+webapi/obj/**
+webapi/obj/Debug/net7.0/webapi.AssemblyInfo.cs
+webapi/obj/Debug/net7.0/webapi.AssemblyInfoInputs.cache
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
