@@ -43,6 +43,6 @@ services:
       - grafana:/var/lib/grafana
 
 
-  volumes:
-    grafana:
-    prometheus: 
+volumes:
+  grafana:
+  prometheus: 

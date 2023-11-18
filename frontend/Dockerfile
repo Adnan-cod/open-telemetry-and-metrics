@@ -4,12 +4,13 @@ FROM node:16-alpine
 WORKDIR /app
 # ==== BUILD =====
 # Install dependencies (npm ci makes sure the exact versions in the lockfile gets installed)
-COPY **/package*.json .
-RUN npm ci 
+COPY  package.json /app
+
+RUN cd /app && ls -la
+RUN npm install 
  
 # Copy app files
 COPY  . /app
-RUN ls -la
 
 RUN npm run build 
 ENV NODE_ENV production
