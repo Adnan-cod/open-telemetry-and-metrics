@@ -1,0 +1,48 @@
+version: "3.7"
+
+services:
+
+  webapi:
+    image: adba/webapi:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: webapi/Dockerfile
+    environment: 
+      ASPNETCORE_URLS: http://localhost:5000
+    ports:
+      - 5000
+    restart: on-failure
+
+  reactapp:
+    image: adba/frontend:${TAG:-latest}
+    build:
+      context: frontend/
+      dockerfile: Dockerfile 
+    ports:
+      - 3000
+    #restart: on-failure
+ 
+  prometheus:
+    image: prom/prometheus:v2.11.1
+    container_name: prometheus
+    volumes:
+      - prometheus:/prometheus
+      - ./settings/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+    restart: on-failure
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-clock-panel,grafana-simple-json-datasource,grafana-piechart-panel
+    ports:
+      - 3001:3000 
+    volumes:
+      - grafana:/var/lib/grafana
+
+
+  volumes:
+    grafana:
+    prometheus: 
