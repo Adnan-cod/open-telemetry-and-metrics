@@ -1,15 +1,20 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Route, BrowserRouter } from "react-router-dom";
+import Register from './Register';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Login from './Login';
 
-import Registration from "./components/Registration";
-import "./App.css";
 
-const routes = (
-  <BrowserRouter>
-    <Route exact path="/" component={Registration} />
-  </BrowserRouter>
-);
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(routes, rootElement);
+function App() {
+	return (
+		<main className="App">
+			<Router>
+				<Routes>
+					<Route path="/" exact element={<Register />} />
+					<Route path="/login" element={<Login />} />
+				</Routes>
+			</Router>
+		</main>
+	);
+}
+
+export default App;
