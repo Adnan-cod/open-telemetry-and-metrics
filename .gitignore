@@ -17,3 +17,5 @@ webapi/obj/Debug/net7.0/webapi.GeneratedMSBuildEditorConfig.editorconfig
 webapi/obj
 webapi\obj
 *.vsidx
+*.cache
+*.editorconfig

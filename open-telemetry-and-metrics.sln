@@ -14,7 +14,36 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{EA
 		frontend\README.md = frontend\README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "database", "database\database.csproj", "{0B3D8714-AEB6-4B7A-BAAA-2D3368D45356}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "database", "database\database.csproj", "{0B3D8714-AEB6-4B7A-BAAA-2D3368D45356}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "public", "public", "{D98C38F9-2079-4A11-8DE9-FF00EDAB1A48}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\public\favicon.ico = frontend\public\favicon.ico
+		frontend\public\index.html = frontend\public\index.html
+		frontend\public\logo192.png = frontend\public\logo192.png
+		frontend\public\logo512.png = frontend\public\logo512.png
+		frontend\public\manifest.json = frontend\public\manifest.json
+		frontend\public\robots.txt = frontend\public\robots.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9C3C3DD5-A19E-4D79-956E-C1B955AFA6ED}"
+	ProjectSection(SolutionItems) = preProject
+		frontend\src\App.css = frontend\src\App.css
+		frontend\src\App.js = frontend\src\App.js
+		frontend\src\App.test.js = frontend\src\App.test.js
+		frontend\src\AuthProvider.js = frontend\src\AuthProvider.js
+		frontend\src\axios.js = frontend\src\axios.js
+		frontend\src\index.css = frontend\src\index.css
+		frontend\src\index.js = frontend\src\index.js
+		frontend\src\Login.js = frontend\src\Login.js
+		frontend\src\logo.svg = frontend\src\logo.svg
+		frontend\src\Register.js = frontend\src\Register.js
+		frontend\src\reportWebVitals.js = frontend\src\reportWebVitals.js
+		frontend\src\setupTests.js = frontend\src\setupTests.js
+		frontend\src\SignIn.tsx = frontend\src\SignIn.tsx
+		frontend\src\SignUp.tsx = frontend\src\SignUp.tsx
+		frontend\src\Theme.js = frontend\src\Theme.js
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +62,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D98C38F9-2079-4A11-8DE9-FF00EDAB1A48} = {EA70B17B-ED39-4E57-8390-990F3257B0FA}
+		{9C3C3DD5-A19E-4D79-956E-C1B955AFA6ED} = {EA70B17B-ED39-4E57-8390-990F3257B0FA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC170D0F-BB02-419F-8287-48DC0E0B50E0}
