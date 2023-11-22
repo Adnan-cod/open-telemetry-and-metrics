@@ -19,3 +19,6 @@ webapi\obj
 *.vsidx
 *.cache
 *.editorconfig
+*.cache
+*.cache
+**\obj\**

@@ -13,6 +13,27 @@ services:
       - 5000
     restart: on-failure
 
+  init:
+    image: adba/database:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: database/Dockerfile
+    environment: 
+      ConnectionStrings__DbContext: "Username=postgres;Password=postgres;Server=db;Database=webapi"
+    depends_on:
+      - db
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/var/lib/postgresql/data
+
   reactapp:
     image: adba/frontend:${TAG:-latest}
     build:
@@ -45,4 +66,6 @@ services:
 
 volumes:
   grafana:
-  prometheus: 
+  prometheus:
+  db:
+    driver: local
