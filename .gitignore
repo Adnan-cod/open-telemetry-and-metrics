@@ -7,3 +7,13 @@ _ReSharper.*
 bin
 obj
 packages
+webapi/obj/Debug/net7.0/webapi.GeneratedMSBuildEditorConfig.editorconfig
+*.cache
+*.vs
+.vs/*
+.vs*
+*.vsidx
+*.vsidx
+webapi/obj
+webapi\obj
+*.vsidx

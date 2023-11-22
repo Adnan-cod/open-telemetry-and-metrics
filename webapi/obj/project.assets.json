@@ -555,11 +555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Adnan\\OneDrive\\Documents\\GitHub\\open-telemetry-and-metrics\\webapi\\webapi.csproj",
+      "projectUniqueName": "C:\\Users\\Adnan\\OneDrive\\Documents\\GitHub\\open-telemetry-and-metrics\\open-telemetry-and-metrics\\webapi\\webapi.csproj",
       "projectName": "webapi",
-      "projectPath": "C:\\Users\\Adnan\\OneDrive\\Documents\\GitHub\\open-telemetry-and-metrics\\webapi\\webapi.csproj",
+      "projectPath": "C:\\Users\\Adnan\\OneDrive\\Documents\\GitHub\\open-telemetry-and-metrics\\open-telemetry-and-metrics\\webapi\\webapi.csproj",
       "packagesPath": "C:\\Users\\Adnan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Adnan\\OneDrive\\Documents\\GitHub\\open-telemetry-and-metrics\\webapi\\obj\\",
+      "outputPath": "C:\\Users\\Adnan\\OneDrive\\Documents\\GitHub\\open-telemetry-and-metrics\\open-telemetry-and-metrics\\webapi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

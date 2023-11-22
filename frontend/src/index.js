@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import './index.css'; 
 import reportWebVitals from './reportWebVitals';
+import SignIn from './SignIn.tsx';
+import SignUp from './SignUp.tsx';
+import { Route } from 'react-router';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="App">
+        <Route path="/" exact component={SignIn} />
+        <Route exact path="/signup" component={SignUp} />
+    </div>
   </React.StrictMode>
 );
 
